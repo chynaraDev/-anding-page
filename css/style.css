@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+button {
+  transition: 0.4s;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Monserrat", sans-serif;
+}
+
+#header {
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+#header .navbar {
+  display: flex;
+  align-items: center;
+}
+#header .navbar--nav {
+  padding-left: 27px;
+}
+#header .navbar--nav a {
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  padding: 0 27px;
+}
+
+#hero {
+  background: url("/img/hero.png") no-repeat center/cover;
+  min-height: 100vh;
+}
+#hero .hero {
+  padding-top: 200px;
+}
+#hero .hero h1 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+  width: 535px;
+}
+#hero .hero h1 span {
+  color: orange;
+}
+#hero .hero p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  width: 378px;
+  padding: 39px 0 80px 0;
+}
+#hero .hero p span {
+  color: orange;
+}
+#hero .hero--btn {
+  display: flex;
+}
+#hero .hero--btn__button-1 {
+  background: #FF9900;
+  border-radius: 60px 0 0 60px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero .hero--btn__button-1 ion-icon {
+  font-size: 25px;
+  padding-left: 15px;
+}
+#hero .hero--btn__button-2 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+  background: transparent;
+  border: 2px solid #FF9900;
+  border-radius: 0 60px 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero .hero--btn__button-2 ion-icon {
+  font-size: 25px;
+  padding-left: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
