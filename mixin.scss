@@ -1,0 +1,14 @@
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin btn{
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FF9900;
+    border-radius: 60px;
+    padding: 5px 12px;
+}
