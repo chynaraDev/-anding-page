@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="icon" href="./img/logo.svg">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
 
@@ -617,9 +618,21 @@
                 <div class="cook--tittle__block">
                     <div class="cook--tittle__block--one">
                         <img src="./img/tittle1.svg" alt="img">
+                        <div></div>
+                    </div>
+                    <div class="cook--tittle__block--one">
                         <img src="./img/tittle2.svg" alt="img">
+                        <div></div>
+                    </div>
+                    <div class="cook--tittle__block--one">
                         <img src="./img/tittle3.svg" alt="img">
+                        <div></div>
+                    </div>
+                    <div class="cook--tittle__block--one">
                         <img src="./img/tittle5.svg" alt="img">
+                        <div></div>
+                    </div>
+                    <div class="cook--tittle__block--one">
                         <img src="./img/tittle6.svg" alt="img">
                         <div></div>
                     </div>
@@ -631,124 +644,160 @@
 </section>
 <!--cook end-->
 
-<!--restaurant start-->
-<section id="restaurant">
+<!--input start-->
+<section id="input">
     <div class="container">
-        <div class="restaurant">
-            <div class="restaurant--block">
+        <div class="input">
+            <img src="./img/ресторан.png" alt="img" class="input--img">
+            <div class="input--blocks">
                 <h1>ЗАБРОНИРОВАТЬ СТОЛ</h1>
-                <h3>ИМЯ</h3>
-                <input type="text" name="" placeholder="АЛТЫНБУБУ">
-                <h3>телефон</h3>
-                <input type="number" name="" placeholder="0708 11 26 10">
-                <div class="restaurant--block__input">
-                    <div class="restaurant--block__input--input">
-                        <h3>дата</h3>
-                        <input type="text" name="" placeholder="__ ИЮНЬ |v">
+                <div class="input--blocks__one">
+                    <h4>ИМЯ</h4>
+                    <input type="text" placeholder="АЛТЫНБУБУ">
+                </div>
+                <div class="input--blocks__one">
+                    <h4>телефон</h4>
+                    <input type="number" placeholder="0708 11 26 10">
+                </div>
+                <div class="input--blocks__datetime">
+                    <div class="input--blocks__one--date">
+                        <h4>дата</h4>
+                        <input type="date">
                     </div>
-                    <div class="restaurant--block__input--input2">
-                    <h3>время</h3>
-                    <input type="number" name="" placeholder="_ _ : _ _ |v">
+                    <div class="input--blocks__one--time">
+                        <h4>время</h4>
+                        <input type="time">
                     </div>
                 </div>
-                <h3>комментарии</h3>
-                <input type="text" name="" placeholder="Привет! Стол на 4-персоны.">
+                <div class="input--blocks__one">
+                    <h4>комментарии</h4>
+                    <textarea cols="50" rows="10" placeholder="Привет! Стол на 4-персоны."></textarea>
+                </div>
                 <button>Отправить</button>
             </div>
         </div>
     </div>
 </section>
-<!--restaurant end-->
+<!--input end-->
 
-<!--review start-->
-<section id="review">
+<!--customer start-->
+<section id="customer">
     <div class="container">
-        <div class="review">
-            <div class="review--text">
-                <h1>НАШ отзывы клиентов</h1>
+        <div class="customer">
+            <div class="customer--text">
+                <div>
+                    <h1>НАШ</h1>
+                    <h2>отзывы клиентов</h2>
+                </div>
                 <p>После проведённого времени в кафе остались приятные впечатление. Интерьер интересный, зал чистый. Персонал был внимателен, доброжелателен и предусмотрителен. Меню показалось скучноваты, но все блюда вкусные. Особенно понравился стейк лосося на гриле, он был просто потрясающе вкусный. Если вы не поклонник авторской кухни, а просто хотите хорошо провести вечер с друзьями,то Вам,конечно,сюда.</p>
-               <button>отзывы</button>
+                <button>отзывы</button>
             </div>
-            <div class="review--block">
-                <div class="review--block__content">
-                    <img src="./img/sadyrov.svg" alt="img">
-                    <div class="review--block__content--text">
+            <div class="customer--blocks">
+                <div class="customer--blocks__one">
+                    <div class="customer--blocks__one--img">
+                        <ion-icon name="arrow-up-outline"></ion-icon>
+                        <img src="./img/sadyrov.svg" alt="img">
+                    </div>
+                    <div class="customer--blocks__one--text">
                         <h1>D Sadaev</h1>
-                            <img src="./img/Star%201.png" alt="img">
-                            <img src="./img/Star%201.png" alt="img">
-                            <img src="./img/Star%201.png" alt="img">
-                            <img src="./img/Star%201.png" alt="img">
-                            <img src="./img/Star%201.png" alt="img">
+                        <div class="customer--blocks__one--text__stars">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                         <p>После проведённого времени в кафе остались приятные впечатления. Интерьер интересный, зал чистый. Персонал был внимателен,доброжелателен и предусмотрителен.</p>
-                            <p>Читать дальше</p>
-                          </div>
-                       </div>
-                <div class="review--block__content">
-                    <img src="./img/sadyrov.svg" alt="img">
-                    <div class="review--block__content--text">
-                        <h1>D Sadaev</h1>
-                        <img src="./img/Star%201.png" alt="img">
-                        <img src="./img/Star%201.png" alt="img">
-                        <img src="./img/Star%201.png" alt="img">
-                        <img src="./img/Star%201.png" alt="img">
-                        <img src="./img/Star%201.png" alt="img">
-                        <p>После проведённого времени в кафе остались приятные впечатления. Интерьер интересный, зал чистый. Персонал был внимателен,доброжелателен и предусмотрителен.</p>
-                        <p>Читать дальше</p>
+                        <div class="customer--blocks__one--text__footer">
+                            <h4>Читать дальше</h4>
+                            <h4>25.06.2021</h4>
+                        </div>
                     </div>
                 </div>
+                <div class="customer--blocks__one">
+                    <div class="customer--blocks__one--img">
+                        <ion-icon name="arrow-down-outline"></ion-icon>
+                        <div>
+                            <img src="./img/s.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="customer--blocks__one--text">
+                        <h1>Şeker Portakal</h1>
+                        <div class="customer--blocks__one--text__stars">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <p> <strike>После проведё</strike> нного времени в кафе остались приятные впечатления. Интерьер интересный, зал чистый. Персонал был внимателен,доброжелателен и предусмотрителен.</p>
+                        <div class="customer--blocks__one--text__footer">
+                            <h4></h4>
+                            <h4>25.06.2021</h4>
+                        </div>
                     </div>
                 </div>
             </div>
-    </div>
-</section>
-<!--review end-->
+        </div>
 
-<!--image start-->
-<section id="image">
-    <div class="container">
-        <div class="image">
-            <div class="image--img">
-                <img src="./img/girl.png" alt="img">
-                <img src="./img/burger.png" alt="img">
-                <img src="./img/e.png" alt="img">
-                <img src="./img/e4.png" alt="img">
+        <div class="tabs">
+            <div class="tabs--label">
+                <label for="one">0</label>
+                <label for="two">0</label>
+                <label for="three">0</label>
             </div>
-            <div class="image--input">
-                <label>
-                    <input type="radio" name="tabs">
-                </label>
-                <label>
-                    <input type="radio" name="tabs">
-                </label>
-                <label>
-                    <input type="radio" name="tabs">
-                </label>
-                <label>
-                    <input type="radio" name="tabs">
-                </label>
+
+            <div class="tabs--blocks">
+                <input type="radio" name="tabs" id="one">
+                <input type="radio" name="tabs" id="two">
+                <input type="radio" name="tabs" id="three">
+
+                <img src="./img/girl.png" alt="img" class="tabs--blocks__one">
+                <img src="./img/burger.png" alt="img" class="tabs--blocks__two">
+                <img src="./img/e.png" alt="img" class="tabs--blocks__three">
             </div>
         </div>
     </div>
 </section>
-<!--image end-->
+<!--customer end-->
 
-<footer id="footer">
+<!--footer start-->
+<section id="footer">
     <div class="container">
-       <div class="footer">
-           <div class="footer--line">
-               <h1>Главная</h1>
-               <h1>О нас</h1>
-               <h1>Отзывы</h1>
-               <h1>Контакты</h1>
-               <img src="./img/logo.svg" alt="img">
-               <ion-icon name="thumbs-up-outline"></ion-icon>
-               <p>Адрес: г. Бишкек ул. Айтматов №154</p>
-               <ion-icon name="call-outline"></ion-icon>
-               <h3>+996 708 12 10 33 Звонить</h3>
-           </div>
-       </div>
+        <div class="footer">
+            <div class="footer--nav">
+                <div>
+                    <a href="#">Главная</a>
+                    <a href="#">О нас</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Контакты</a>
+                </div>
+                <div>
+                    <h2>c 2021. Все право защищенны</h2>
+                </div>
+            </div>
+            <img src="./img/footerlogo.png" alt="img">
+            <div class="footer--address">
+                <div>
+                    <img src="./img/house.png" alt="img">
+                    <p>Адрес: <br>
+                        г. Бишкек <br>
+                        ул. Айтматов №154 <br>
+                    </p>
+                </div>
+                <div>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <p>
+                        <a href="tel:+996">+996 708 12 10 33</a>
+                        Звонить
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-</footer>
+</section>
+<!--footer end-->
+
 
 
 

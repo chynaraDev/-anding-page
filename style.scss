@@ -23,7 +23,7 @@
 }
 
 #hero{
-  background: url("/img/hero.png") no-repeat center/cover;
+  background: url("/img/heroy.png") no-repeat center/cover;
   min-height: 100vh;
   .hero{
     padding-top: 200px;
@@ -306,6 +306,7 @@
         top: 350px;
         left: 299px;
         div{
+          position: absolute;
           width: 114px;
           height: 114px;
           border-radius: 50%;
@@ -335,7 +336,10 @@
         width: 280px;
         height: 35px;
         border-bottom: 1px solid #FF9900;
+        display: flex;
+        align-items: center;
         &--one{
+          padding-left: 16px;
           div{
             width: 13px;
             height: 0;
@@ -356,45 +360,73 @@
   }
 }
 
-#restaurant{
-  background: url("/img/cook.png") no-repeat center/cover;
-  min-height: 100vh;
+#input{
+  background: #000;
   padding: 40px 0;
-  .restaurant{
-    &--block{
-      margin-left: 120px;
-      width: 1209px;
-      height: 635px;
-      border-radius: 20px 0 0 20px;
-      background: url("/img/ресторан.png") no-repeat center/cover;
+  min-height: 100vh;
+  .input{
+    position: relative;
+    &--img{
+      position: absolute;
+      right: -189px;
+    }
+    &--blocks{
+      position: absolute;
+      top: 0;
+      left: 137px;
       h1{
         font-weight: 600;
         font-size: 24px;
         color: #FF9900;
-        padding: 49px 0 24px 0;
+        padding-top: 49px;
       }
-      h3{
-        font-weight: 400;
-        font-size: 12px;
-        color: #FF9900;
-        padding-top: 24px;
-      }
-      input{
-        width: 343px;
-        height: 38px;
-        border: 1px solid #FF9900;
-        background: transparent;
-        font-weight: 400;
-        font-size: 12px;
-        color: #878787;
-      }
-      &__input{
+     &__one{
+       padding: 24px 0;
+       h4{
+         font-weight: 400;
+         font-size: 12px;
+         color: #FF9900;
+       }
+       input{
+         width: 343px;
+         height: 38px;
+         border: 1px solid #FF9900;
+         background: transparent;
+         color: white;
+         font-size: 18px;
+         outline: none;
+         padding: 0 10px;
+       }
+       textarea{
+         width: 343px;
+         height: 88px;
+         background: transparent;
+         border: 1px solid #FF9900;
+         color: white;
+         font-size: 18px;
+         outline: none;
+         padding: 10px;
+       }
+       &--time{
+         padding-left: 47px;
+       }
+     }
+      &__datetime{
         display: flex;
         align-items: center;
+        h4{
+          font-weight: 400;
+          font-size: 12px;
+          color: #FF9900;
+        }
         input{
           width: 147px;
           height: 47px;
           border: 1px solid #FF9900;
+          background: transparent;
+          color: white;
+          font-size: 18px;
+          outline: none;
         }
       }
       button{
@@ -403,86 +435,123 @@
         color: #FFFFFF;
         background: #FF9900;
         border-radius: 20px;
-        padding: 11px 50px;
-        button:hover{
+        width: 250px;
+        height: 51px;
+        margin-left: 30px;
+        &:hover{
+          background: transparent;
+          border: 2px solid #FF9900;
           transform: scale(1.1);
-          color: black;
-          background: #FFFFFF;
         }
       }
     }
   }
 }
 
-#review {
-  background: url("/img/cook.png") no-repeat center/cover;
-  min-height: 100vh;
+#customer{
+  background: url("/img/customer.png") no-repeat center/cover;
   padding: 40px 0;
-
-  .review {
+  .customer{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    &--text {
-      h1 {
-        font-weight: 700;
-        font-size: 36px;
-        color: #FFFFFF;
+    justify-content: space-between;
+    &--text{
+      div{
+        display: flex;
+        align-items: center;
+        h1{
+          font-weight: 700;
+          font-size: 36px;
+          color: #FFFFFF;
+        }
+        h2{
+          font-weight: 700;
+          font-size: 36px;
+          color: #FFFFFF;
+          padding-left: 37px;
+        }
       }
-
-      p {
-        width: 375px;
-        height: 120px;
+      p{
         font-weight: 400;
         font-size: 12px;
+        width: 375px;
         color: #FFFFFF;
-        padding: 30px 0 40px 0;
+        padding: 31px 0 40px 0;
       }
-
-      button {
+      button{
         font-weight: 600;
         font-size: 36px;
         color: #FFFFFF;
-        background: transparent;
         border: 1px solid #FF9900;
         border-radius: 60px;
-        padding: 8px 65px;
+        background: transparent;
+        padding: 15px 25px;
+        &:hover{
+          background: #FF9900;
+          transform: scale(1.1);
+        }
       }
     }
-
-    &--block {
+    &--blocks{
       width: 500px;
       height: 571px;
-      background: radial-gradient(100% 100% at 0% 33.19%, rgba(126, 126, 126, 0.46) 0%, rgba(114, 112, 112, 0.46) 100%);      backdrop-filter: blur(5px);
+      background: radial-gradient(100% 100% at 0% 33.19%, rgba(126, 126, 126, 0.46) 0%, rgba(114, 112, 112, 0.46) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+      backdrop-filter: blur(5px);
       border-radius: 60px;
-
-      &__content {
+      @include center();
+      flex-direction: column;
+      &__one{
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding-top: 70px;
+        margin: 33px 0;
+        &--img{
+          display: flex;
+          align-items: end;
+          padding-right: 55px;
+          ion-icon{
+            font-size: 50px;
+            color: #FF9900;
+          }
+          div{
+            width: 73px;
+            height: 73px;
+            border-radius: 50%;
+            background: #FF9900;
+            @include center();
+          }
 
-        &--text {
-          h1 {
+        }
+        &--text{
+          h1{
             font-weight: 600;
             font-size: 18px;
             color: #FFFFFF;
             padding-bottom: 15px;
           }
-
-          p {
-            width: 282px;
+          p{
             font-weight: 400;
             font-size: 12px;
             color: #FFFFFF;
+            width: 282px;
             padding: 17px 0 15px 0;
           }
-
-          &__text {
+          &__stars{
             display: flex;
             align-items: center;
-
-            p {
+            margin-right: 9px;
+            div{
+              clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+              width: 17px;
+              height: 17px;
+              background: #FBC400;
+            }
+          }
+          &__footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h4{
               font-weight: 400;
               font-size: 12px;
               color: #FFFFFF;
@@ -492,32 +561,71 @@
       }
     }
   }
-}
 
-#image{
-  background: url("/img/cook.png") no-repeat center/cover;
-  min-height: 100vh;
-  padding: 40px 0;
-  .image{
-    &--img{
-      display: flex;
-      align-items: center;
-      img{
-        padding: 0 21px;
+  .tabs {
+    padding: 50px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+
+    &--label {
+      label {
+        background: transparent;
+        color: transparent;
+        border-radius: 50%;
+        border: 1px solid #FF9900;
       }
     }
-    &--input{
+
+    &--blocks {
       display: flex;
       align-items: center;
-      justify-content: center;
-      label{
-        input{
-          width: 37px;
-          height: 37px;
-          background: transparent;
-          border: 1px solid #FF9900;
-        }
+      position: relative;
+      input{
+        display: none;
       }
+
+      &--one {
+        position: absolute;
+        bottom: -50px;
+        left: 45px;
+      }
+
+      &--two {
+        position: absolute;
+        bottom: -50px;
+        left: 50px;
+      }
+
+      &--three {
+        position: absolute;
+        bottom: -50px;
+        left: 55px;
+      }
+
+      img {
+        width: 332px;
+        height: 267px;
+        border-radius: 30px;
+        margin: 0 15px;
+      }
+    }
+
+    #one:checked ~ .tabs--blocks__two,
+    #one:checked ~ .tabs--blocks__three {
+      opacity: 0.3;
+    }
+
+    #two:checked ~ .tabs--blocks__one,
+    #two:checked ~ .tabs--blocks__three {
+      opacity: 0.3;
+    }
+
+    #three:checked ~ .tabs--blocks__one,
+    #three:checked ~ .tabs--blocks__two {
+      opacity: 0.3;
     }
   }
 }
@@ -525,43 +633,50 @@
 #footer{
   background: black;
   padding: 40px 0;
-  height: 200px;
+  border-top: 2px solid #FF9900;
+  border-radius: 40px;
   .footer{
-    &--line{
-      width: 1440px;
-      height: 293px;
-      border: 1px solid #FF9900;
-      border-radius: 40px;
-      margin-left: -120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--nav{
+      a{
+        font-weight: 400;
+        font-size: 18px;
+        color: #FFFFFF;
+        padding: 0 22px;
+      }
+      h2{
+        padding-top: 61px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        color: #FFFFFF;
+      }
+    }
+    &--address{
       display: flex;
-      padding-top: 50px;
-      h1{
-        font-weight: 400;
-        font-size: 18px;
-        color: #FFFFFF;
-        padding: 0 23px;
-      }
-      img{
-        padding-left: 70px;
-        padding-right: 90px;
-        width: 145px;
-        height: 136px;
-      }
-      ion-icon{
-        color: #FFFFFF;
-        font-size: 25px;
-      }
-      p{
-        font-weight: 400;
-        font-size: 18px;
-        width: 175px;
-        color: #FFFFFF;
-      }
-      h3{
-        font-weight: 400;
-        font-size: 12px;
-        width: 100px;
-        color: #FFFFFF;
+      align-items: center;
+      div{
+        display: flex;
+        align-items: start;
+        p{
+          font-weight: 400;
+          font-size: 18px;
+          color: #FFFFFF;
+          display: flex;
+          flex-direction: column;
+          padding:10px 0 0 10px;
+        }
+        a{
+          font-weight: 400;
+          font-size: 12px;
+          color: #FFFFFF;
+        }
+        ion-icon{
+          font-size: 30px;
+          color: #FFFFFF;
+        }
       }
     }
   }
